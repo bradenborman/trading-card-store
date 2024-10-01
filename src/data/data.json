@@ -64,5 +64,71 @@
         "price": "$40",
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC56oYSh_99KgyMjZf06I10qrRbfRCBQ1Lqy3xx9XxB1tn5tZkmiyL27a4MxsZzYlOLSE&usqp=CAU",
         "condition": "Excellent"
+    },
+    {
+        "name": "Base Set Charizard",
+        "price": "$10",
+        "imgUrl": "https://den-cards.pokellector.com/119/Charizard.BS.4.png",
+        "condition": "Good"
+    },
+    {
+        "name": "Base Set Blastoise",
+        "price": "$15",
+        "imgUrl": "https://m.media-amazon.com/images/I/81cV3O3wnwL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        "condition": "Excellent"
+    },
+    {
+        "name": "Base Set Venusaur",
+        "price": "$12",
+        "imgUrl": "https://cdn10.mavin.io/production/soldItems/320036831/images/image-0.jpg",
+        "condition": "Good"
+    },
+    {
+        "name": "Shiny Charizard",
+        "price": "$100",
+        "imgUrl": "https://tcgplayer-cdn.tcgplayer.com/product/89163_in_1000x1000.jpg",
+        "condition": "Mint"
+    },
+    {
+        "name": "Mewtwo",
+        "price": "$20",
+        "imgUrl": "https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/149258.jpg",
+        "condition": "Mint"
+    },
+    {
+        "name": "Gyarados",
+        "price": "$25",
+        "imgUrl": "https://m.media-amazon.com/images/I/51BmwaGUilL._AC_UF894,1000_QL80_.jpg",
+        "condition": "Mint"
+    },
+    {
+        "name": "Dragonite",
+        "price": "$30",
+        "imgUrl": "https://tcgplayer-cdn.tcgplayer.com/product/106520_in_1000x1000.jpg",
+        "condition": "Good"
+    },
+    {
+        "name": "Lapras",
+        "price": "$18",
+        "imgUrl": "https://m.media-amazon.com/images/I/415+B191q6L.jpg",
+        "condition": "Good"
+    },
+    {
+        "name": "Alakazam",
+        "price": "$22",
+        "imgUrl": "https://m.media-amazon.com/images/I/51FlModuASL._AC_UF894,1000_QL80_.jpg",
+        "condition": "Fair"
+    },
+    {
+        "name": "Jigglypuff",
+        "price": "$5",
+        "imgUrl": "https://tcgplayer-cdn.tcgplayer.com/product/42529_in_1000x1000.jpg",
+        "condition": "Good"
+    },
+    {
+        "name": "Snorlax",
+        "price": "$40",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC56oYSh_99KgyMjZf06I10qrRbfRCBQ1Lqy3xx9XxB1tn5tZkmiyL27a4MxsZzYlOLSE&usqp=CAU",
+        "condition": "Excellent"
     }
 ]

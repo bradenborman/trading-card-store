@@ -3,15 +3,17 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 
 import './TradingCardApp.scss';
 import PageLayout from '../layout/PageLayout';
-import Home from '../home/Home';
+import Pokemon from '../pokemon/Pokemon';
+import CardView from '../pokemon/cardview/CardView';
 
 const TradingCardApp: React.FC = () => {
   return (
     <Router>
       <PageLayout>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Navigate to="/pokemon" replace />} />
+          <Route path="/pokemon" element={<Pokemon />} />
+          <Route path="/pokemon/view/:cardId" element={<CardView />} />
         </Routes>
       </PageLayout>
     </Router>

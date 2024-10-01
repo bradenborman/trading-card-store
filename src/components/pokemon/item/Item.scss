@@ -29,6 +29,10 @@
         }
     }
 
+    &.grayscale .img-wrapper img {
+        filter: grayscale(100%); /* Apply grayscale effect */
+    }
+
     .img-wrapper {
         position: relative;
         overflow: hidden;
@@ -61,10 +65,9 @@
         }
     }
 
-
     .info {
         display: flex;
-        justify-content:  start;
+        justify-content: start;
         align-items: center;
 
         .condition {
@@ -74,44 +77,44 @@
             margin-right: 7px;
             border: 1px solid rgba(0, 0, 0, 0.432);
             position: relative;
-        
+
             &.mint {
                 background-color: $mint-color;
-        
+
                 &:hover::after {
                     content: "M";
                     color: white;
                     background-color: $mint-color;
                 }
             }
-        
+
             &.excellent {
                 background-color: $excellent-color;
-        
+
                 &:hover::after {
                     content: "E"; 
                     background-color: $excellent-color;
                 }
             }
-        
+
             &.good {
                 background-color: $good-color;
-        
+
                 &:hover::after {
                     content: "G"; 
                     background-color: $good-color;
                 }
             }
-        
+
             &.fair {
                 background-color: $fair-color;
-        
+
                 &:hover::after {
                     content: "F"; 
                     background-color: $fair-color;
                 }
             }
-        
+
             &:hover::after {
                 font-size: 0.6em;
                 position: absolute;
@@ -124,24 +127,20 @@
                 opacity: .6;
             }
         }
-        
-            
-
-        }
+    }
 
     h3 {
         font-size: 1.2rem;
         color: #333;
         margin-top: 10px;
         font-weight: 400;
+        text-decoration: none;
     }
 
     p {
         font-size: 1.1rem;
         color: #777;
         margin: 0;
-       
-
     }
 
     .setNumber {
@@ -151,17 +150,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         p {
             font-size: .8rem;
             color: #555;  
         } 
         
         img {
-                width: 25px;
-                height: auto;
-                margin-left: 5px;
-            }
+            width: 20px;
+            height: auto;
+            margin-left: 10px;
+        }
     }
-    
 }

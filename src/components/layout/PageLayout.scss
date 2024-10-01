@@ -1,7 +1,9 @@
+
 .page-layout {
     display: flex;
     transition: margin-left 0.3s ease;
     height: 100vh;
+    font-family: "Lato", sans-serif;
 
     .main-content {
         flex: 1;
@@ -9,7 +11,54 @@
         height: 100vh;
         overflow: auto;
         transition: margin-left 0.3s ease;
-        padding: 1rem;
+        padding: 0;
     }
+
+
+    header {
+        background: linear-gradient(to right, #333, #333,  #d65a5a, $fun-nav-color);
+        padding: 1.1rem;
+        position: sticky;
+        top: 0px;
+        z-index: 99;
+        color: white;
+        font-family: "Sunflower", sans-serif;
+        font-size: 1.3em;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        z-index: 99;
+
+        h3 {
+            span {
+                font-style: italic;
+                font-size: .9em;
+                margin: 0px 15px;
+                color: $fun-nav-color;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -5px;
+                    top: 7px;
+                    height: 5px;
+                    width: 5px;
+                    background-color: $fun-nav-color;
+                    border-radius: 10px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -10px;
+                    top: 7px;
+                    height: 5px;
+                    width: 5px;
+                    background-color: $fun-nav-color;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+}
+
 
 }

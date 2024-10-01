@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const SideMenu: React.FC<{}> = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate(); // Initialize navigate hook
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -21,8 +23,8 @@ const SideMenu: React.FC<{}> = () => {
             </div>
 
             <div className="menu-content">
-                <div className="menu-item">
-                    <img className="icon" src="http://pngimg.com/uploads/pokeball/pokeball_PNG29.png" />
+                <div className="menu-item" onClick={() => navigate("/pokemon")}>
+                    <img className="icon" src="http://pngimg.com/uploads/pokeball/pokeball_PNG29.png" alt="Pokemon Icon" />
                     <span className="text">Pokemon</span>
                 </div>
                 <div className="menu-item">

@@ -3,14 +3,18 @@ $excellent-color: rgb(57, 224, 57);
 $good-color:rgb(198, 250, 172);
 $fair-color: rgb(247, 255, 137);
 
+$fun-nav-color: #e25151;
+
 
 @import "../layout/PageLayout";
 @import "../sidemenu/SideMenu";
-@import "../home/Home";
-@import "../item/Item";
-
+@import "../pokemon/Pokemon";
+@import "../pokemon//item/Item.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Lilita+One&family=Sunflower:wght@300;500;700&display=swap');
+
+
 
 *,
 *::before,
@@ -18,5 +22,4 @@ $fair-color: rgb(247, 255, 137);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
 }

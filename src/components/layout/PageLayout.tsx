@@ -11,7 +11,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
             <SideMenu />
             <main className="main-content">
             <header>
-                <h3>Hot Singles In Your Area</h3>
+                <h3>Hot <span>Trading Card</span> Singles In Your Area 🔥</h3>
             </header>
                 {children}
             </main>
