@@ -6,21 +6,21 @@
     grid-auto-flow: dense;
 
     .spotlight {
-        margin: 50px 300px;
         grid-column: 1 / -1;
-        padding: 20px;
         text-align: center;
-        border: 1px solid #ddd;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(209, 209, 209, 0.603));
-
-        border-radius: 8px;
-        padding: 20px;
+        
 
         .spotlight-grid {
+            border: 1px solid #ddd;
+            max-width: 1200px;
             display: grid;
             grid-template-columns: 2fr repeat(4, 1fr);
             gap: 20px;
             align-items: center;
+            border-radius: 8px;
+            padding: 20px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(209, 209, 209, 0.603));
+            margin: 20px auto;
 
             .context {
                 padding: 0px 50px;
@@ -45,19 +45,19 @@
                     align-items: center;
 
                     &.mint {
-                        background-color: rgb(11, 138, 11);
+                        background-color: $mint-color;
                     }
 
                     &.excellent {
-                        background-color: rgb(57, 185, 57);
+                        background-color: $excellent-color;
                     }
 
                     &.good {
-                        background-color: rgb(141, 245, 141);
+                        background-color: $good-color;
                     }
 
                     &.fair {
-                        background-color: rgb(210, 253, 210);
+                        background-color: $fair-color;
                     }
 
                     &:hover {

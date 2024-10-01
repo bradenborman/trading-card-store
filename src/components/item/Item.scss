@@ -11,7 +11,7 @@
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 
@@ -61,6 +61,74 @@
         }
     }
 
+
+    .info {
+        display: flex;
+        justify-content:  start;
+        align-items: center;
+
+        .condition {
+            border-radius: 50%;
+            height: 18px;
+            width: 18px;
+            margin-right: 7px;
+            border: 1px solid rgba(0, 0, 0, 0.432);
+            position: relative;
+        
+            &.mint {
+                background-color: $mint-color;
+        
+                &:hover::after {
+                    content: "M";
+                    color: white;
+                    background-color: $mint-color;
+                }
+            }
+        
+            &.excellent {
+                background-color: $excellent-color;
+        
+                &:hover::after {
+                    content: "E"; 
+                    background-color: $excellent-color;
+                }
+            }
+        
+            &.good {
+                background-color: $good-color;
+        
+                &:hover::after {
+                    content: "G"; 
+                    background-color: $good-color;
+                }
+            }
+        
+            &.fair {
+                background-color: $fair-color;
+        
+                &:hover::after {
+                    content: "F"; 
+                    background-color: $fair-color;
+                }
+            }
+        
+            &:hover::after {
+                font-size: 0.6em;
+                position: absolute;
+                top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%);
+                border-radius: 50%; 
+                padding: 2px;
+                font-weight: bold;
+                opacity: .6;
+            }
+        }
+        
+            
+
+        }
+
     h3 {
         font-size: 1.2rem;
         color: #333;
@@ -72,5 +140,28 @@
         font-size: 1.1rem;
         color: #777;
         margin: 0;
+       
+
     }
+
+    .setNumber {
+        margin-left: auto; /* Pushes it to the end of the flex container */
+        margin-right: 5px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            font-size: .8rem;
+            color: #555;  
+        } 
+        
+        img {
+                width: 25px;
+                height: auto;
+                margin-left: 5px;
+            }
+    }
+    
 }

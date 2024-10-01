@@ -6,6 +6,7 @@ interface Card {
     name: string;
     price: string;
     imgUrl: string;
+    condition: string;
 }
 
 const Home: React.FC = () => {
@@ -39,7 +40,7 @@ const Home: React.FC = () => {
         <section className="trading-cards-grid">
             {cardData.map((card: Card, index: number) => (
                 <React.Fragment key={index}>
-                    <Item name={card.name} price={card.price} imgUrl={card.imgUrl} />
+                    <Item name={card.name} price={card.price} imgUrl={card.imgUrl} condition={card.condition} />
                     {index === 1 && spotLight()}
                 </React.Fragment>
             ))}

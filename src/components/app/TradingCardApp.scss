@@ -1,7 +1,14 @@
-@import url("../layout/PageLayout.scss");
-@import url("../sidemenu/SideMenu.scss");
-@import url("../home/Home.scss");
-@import url("../item/Item.scss");
+$mint-color: rgb(10, 87, 10);
+$excellent-color: rgb(57, 224, 57);
+$good-color:rgb(198, 250, 172);
+$fair-color: rgb(247, 255, 137);
+
+
+@import "../layout/PageLayout";
+@import "../sidemenu/SideMenu";
+@import "../home/Home";
+@import "../item/Item";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 

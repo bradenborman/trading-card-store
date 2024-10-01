@@ -10,6 +10,9 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
         <div className="page-layout">
             <SideMenu />
             <main className="main-content">
+            <header>
+                <h3>Hot Singles In Your Area</h3>
+            </header>
                 {children}
             </main>
         </div>
