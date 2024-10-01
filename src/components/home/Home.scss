@@ -1,7 +1,8 @@
 .trading-cards-grid {
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 30px;
     grid-auto-flow: dense;
 
     .spotlight {
@@ -58,6 +59,12 @@
                     &.fair {
                         background-color: rgb(210, 253, 210);
                     }
+
+                    &:hover {
+                        transform: translateY(-2px);
+                        transition: all .33s ease;
+                    }
+
                 }
             }
         }

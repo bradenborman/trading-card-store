@@ -1,16 +1,22 @@
 import React from 'react';
 import Item from '../item/Item';
+import cardData from '../../data/data.json';
+
+interface Card {
+    name: string;
+    price: string;
+    imgUrl: string;
+}
 
 const Home: React.FC = () => {
-    return (
-        <section className="trading-cards-grid">
-            <Item name="Base Set Charizard" price="$10" imgUrl="path/to/image1.jpg" />
-            <Item name="Item 2" price="$20" imgUrl="path/to/image2.jpg" />
+
+    const spotLight = () => {
+        return (
             <div className="spotlight">
                 <div className="spotlight-grid">
                     <div className="context">
                         <h2>Condition</h2>
-                        <p>is evaluated by 3 guys who dont really know but try their best, okay.</p>
+                        <p>is evaluated by 3 guys who don't really know but try their best, okay.</p>
                     </div>
                     <div className='condition-helper'>
                         <div className='label mint'>Mint</div>
@@ -26,20 +32,17 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <Item name="Item 3" price="$30" imgUrl="path/to/image3.jpg" />
-            <Item name="Item 4" price="$40" imgUrl="path/to/image4.jpg" />
-            <Item name="Item 1" price="$10" imgUrl="path/to/image1.jpg" />
-            <Item name="Item 2" price="$20" imgUrl="path/to/image2.jpg" />
-            <Item name="Item 3" price="$30" imgUrl="path/to/image3.jpg" />
-            <Item name="Item 4" price="$40" imgUrl="path/to/image4.jpg" />
-            <Item name="Item 1" price="$10" imgUrl="path/to/image1.jpg" />
-            <Item name="Item 2" price="$20" imgUrl="path/to/image2.jpg" />
-            <Item name="Item 3" price="$30" imgUrl="path/to/image3.jpg" />
-            <Item name="Item 4" price="$40" imgUrl="path/to/image4.jpg" />
-            <Item name="Item 1" price="$10" imgUrl="path/to/image1.jpg" />
-            <Item name="Item 2" price="$20" imgUrl="path/to/image2.jpg" />
-            <Item name="Item 3" price="$30" imgUrl="path/to/image3.jpg" />
-            <Item name="Item 4" price="$40" imgUrl="path/to/image4.jpg" />
+        )
+    }
+
+    return (
+        <section className="trading-cards-grid">
+            {cardData.map((card: Card, index: number) => (
+                <React.Fragment key={index}>
+                    <Item name={card.name} price={card.price} imgUrl={card.imgUrl} />
+                    {index === 1 && spotLight()}
+                </React.Fragment>
+            ))}
         </section>
     );
 };
