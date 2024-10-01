@@ -1,0 +1,112 @@
+.menu {
+    width: 75px;
+    height: 100vh;
+    background-color: #333;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    transition: width 0.3s ease;
+    position: relative;
+
+    &.expanded {
+        width: 200px;
+    }
+
+    .close-menu-button-wrapper {
+        width: 100%;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+        .close-menu-button {
+            width: 35px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            margin: 20px;
+
+            .line {
+                background-color: #030303;
+                height: 4px;
+                width: 100%;
+                border-radius: 2px;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+
+                &:nth-child(1) {
+                    transform-origin: top left;
+                }
+
+                &:nth-child(3) {
+                    transform-origin: bottom left;
+                }
+            }
+
+            &.open {
+                .line {
+                    &:nth-child(1) {
+                        transform: translateX(4px) rotate(45deg);
+                        width: calc(100% + 3px);
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        width: calc(100% + 3px);
+                        transform: translateX(4px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        overflow-y: auto;
+    }
+
+    .menu-item {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        color: white;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 5px 0;
+        cursor: pointer;
+
+        .icon {
+            max-width: 30px;
+            margin-right: 15px;
+            font-size: 24px;
+            transform: translateX(10px);
+            transition: transform 0.2s ease;
+        }
+
+        .text {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+
+    }
+
+    &.expanded .menu-item {
+        .text {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .icon {
+            transform: translateX(0px);
+        }
+
+        &:hover {
+            .icon {
+                transform: translateX(3px);
+            }
+        }
+    }
+}

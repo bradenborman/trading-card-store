@@ -1,0 +1,65 @@
+.trading-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+    grid-auto-flow: dense;
+
+    .spotlight {
+        margin: 50px 300px;
+        grid-column: 1 / -1;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ddd;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(209, 209, 209, 0.603));
+
+        border-radius: 8px;
+        padding: 20px;
+
+        .spotlight-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(4, 1fr);
+            gap: 20px;
+            align-items: center;
+
+            .context {
+                padding: 0px 50px;
+            }
+
+            .condition-helper {
+                border: 1px solid #ddd;
+                background-color: #fff;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+
+                .label {
+                    padding: 15px;
+                    width: 100px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.mint {
+                        background-color: rgb(11, 138, 11);
+                    }
+
+                    &.excellent {
+                        background-color: rgb(57, 185, 57);
+                    }
+
+                    &.good {
+                        background-color: rgb(141, 245, 141);
+                    }
+
+                    &.fair {
+                        background-color: rgb(210, 253, 210);
+                    }
+                }
+            }
+        }
+    }
+}
